@@ -1,7 +1,7 @@
 # Bank data analysis-Prediction if a bank’s customer will stay or leave the bank
 ----
 ## Introduction
-Customer attrition is one of the biggest challenges of any organization, in our case it is Bank Customer attrition. Banks knowy that the cost of acquiring new customers is 7 times higher than retaining existing ones, which means losing customers can be very financially detrimental.Throw the Bank dataset we are going to analyze and figure out why a customer leaves and when they leave with reasonable accuracy, so it would help the Bank to make appropriate strategy.
+Customer attrition is one of the biggest challenges of any organization, in our case it is Bank Customer attrition. Banks know that the cost of acquiring new customers is 7 times higher than retaining existing ones, which means losing customers can be very financially detrimental.Throw the Bank dataset we are going to analyze and figure out why a customer leaves and when they leave with reasonable accuracy, so it would help the Bank to make appropriate strategy.
 
 The goal of our project is to create a robust classifier and use the data, where we will build a model that will recognize whether specific client will leave/unsubscribe the bank services. The project is made up of few phases:
   * Data Loading and Preprocessing
@@ -27,7 +27,7 @@ First of all, we are dealing with an imbalanced classification problem(Existing 
 For better understanding  the patterns , we tried to explore and visualize our dataset by doing distribution of variables
  <img src="https://user-images.githubusercontent.com/81990864/115442389-3ce9d300-a212-11eb-8f4e-832a0d6c9ae2.jpg" align="center" width="700" height="400">
 
-Customer age in our dataset follows a fairly normal distribution and as we can see it doesn't play a part in churning.More than 70% of the customers are in age range between 36-56 years old, so we are dealing with a clients who may start thinking of their pensions, inheritance, taxes, etc. which means they will emphasize on finding the best deal, regardless of the bank.
+Customer age in our dataset follows a fairly normal distribution and as we can see it doesn't play a part in churning.More than 70% of the customers are in age range between 36-56 years old, so we are dealing with a clients who may start thinking of their pensions, inheritance, taxes, etc., which means they will emphasize on finding the best deal, regardless of the bank.
 
 ![numeric](https://user-images.githubusercontent.com/81990864/115446197-2003ce80-a217-11eb-9a7f-af4f50482b60.jpg)
 
