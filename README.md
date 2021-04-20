@@ -52,7 +52,7 @@ In this phase we performed few steps :
 For the best performing classifer ( in this case XGB Classifier) we did Hyperparameter  tunning by using  Grid Search, RandomizedSearch  and Manual Search. There was  slight improvement 
 
 ----
-##Conclusion
+## Conclusion
 
 It is equally important to not only have an accurate, but also an interpretable model. Oftentimes, apart from wanting to have a model that is successfully predicting which customers are prone to churn, it is very  nice to identifying which variables are important can help us in early detection and maybe even improving the service. As we said before ,it is much cheaper to retain existing clients than to acquire new ones.
 However, it is not easy to detect a client's dissatisfaction, and they often stop using  bank’s  services without any previous warning. Some of the many benefits of using machine learning for customer churn prevention are identify company problems and fix them, also increase revenue and reduce the loss of revenue from customer churn. Early detection and forecasting customer behavior can help to make real time response to prevent churning. 
