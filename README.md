@@ -31,5 +31,8 @@ Customer age in our dataset follows a fairly normal distribution and as we can s
 
 ![numeric](https://user-images.githubusercontent.com/81990864/115446197-2003ce80-a217-11eb-9a7f-af4f50482b60.jpg)
 
+The attrition class has a lower total transaction count, total count change, total revolving balance, average utilization ratio and total transactions amount compared to the existing customers class, as expected.The bank can make further efforts  to  encourage customers  to increase  transactions amount and  number of transactions .
 
+![categoric](https://user-images.githubusercontent.com/81990864/115446953-33fc0000-a218-11eb-82d8-48537cc1b303.jpg)
 
+Attrition class has a higher proportion of  customers who  were more inactive in the last 12 months . Also customers who hold more products from the same bank stay with the bank while the customers holding fewer products churn
