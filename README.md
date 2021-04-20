@@ -37,7 +37,9 @@ The attrition class has a lower total transaction count, total count change, tot
 
 Attrition class has a higher proportion of  customers who  were more inactive in the last 12 months . Also customers who hold more products from the same bank stay with the bank while the customers holding fewer products churn
 
-## Build Predictive Models and evaluations
+----
+
+## Build Predictive Models and Evaluations
 In this phase we performed few steps :
 * We generated training and test datasets by dividing dataset into training and test set with an 70%-30% ratio. As mentioned earlier, we also used SMOTE to handle issues with the imbalanced data . The new samples should be generated only in the training set to ensure our model generalizes well to unseen data.
 * We tested six different machine learning models to predict customer churn, including, Decision Tree, Random Forest, GaussianNB, K-Nearest Neighbor, Support Vector Machine and XGBoost.
@@ -48,6 +50,9 @@ In this phase we performed few steps :
 ![roc](https://user-images.githubusercontent.com/81990864/115448357-ec767380-a219-11eb-95f5-ca3c39ff60a6.jpg)
 
 For the best performing classifer ( in this case XGB Classifier) we did Hyperparameter  tunning by using  Grid Search, RandomizedSearch  and Manual Search. There was  slight improvement 
+
+----
+##Conclusion
 
 It is equally important to not only have an accurate, but also an interpretable model. Oftentimes, apart from wanting to have a model that is successfully predicting which customers are prone to churn, it is very  nice to identifying which variables are important can help us in early detection and maybe even improving the service. As we said before ,it is much cheaper to retain existing clients than to acquire new ones.
 However, it is not easy to detect a client's dissatisfaction, and they often stop using  bank’s  services without any previous warning. Some of the many benefits of using machine learning for customer churn prevention are identify company problems and fix them, also increase revenue and reduce the loss of revenue from customer churn. Early detection and forecasting customer behavior can help to make real time response to prevent churning. 
