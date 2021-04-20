@@ -23,11 +23,13 @@ Also Machine Learning algorithms can typically only have numerical values as the
 This analysis focuses on the behavior of bank customers who are more likely to leave the bank .We want to find out the most striking behaviors of customers through Exploratory Data Analysis and later on use some of the predictive analytics techniques to determine the customers who are most likely to churn.
 First of all, we are dealing with an imbalanced classification problem(Existing Customers 84% and Attrited Customers 16%) . Machine learning algorithms work well when the number of instances of each class is roughly equal so we utilized  SMOTE technique when creating the models to create balanced classification. 
 
-![class](https://user-images.githubusercontent.com/81990864/115439830-4c1b5180-a20f-11eb-9f7d-9ead22c3605d.jpg)
 
 For better understanding  the patterns , we tried to explore and visualize our dataset by doing distribution of variables
  <img src="https://user-images.githubusercontent.com/81990864/115442389-3ce9d300-a212-11eb-8f4e-832a0d6c9ae2.jpg" align="center" width="700" height="400">
 
 Customer age in our dataset follows a fairly normal distribution and as we can see it doesn't play a part in churning.More than 70% of the customers are in age range between 36-56 years old, so we are dealing with a clients who may start thinking of their pensions, inheritance, taxes, etc. which means they will emphasize on finding the best deal, regardless of the bank.
 
-https://user-images.githubusercontent.com/81990864/115441345-08c1e280-a211-11eb-9b56-9329ad9af78e.png)
+![numeric](https://user-images.githubusercontent.com/81990864/115446197-2003ce80-a217-11eb-9a7f-af4f50482b60.jpg)
+
+
+
