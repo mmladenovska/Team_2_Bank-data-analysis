@@ -36,8 +36,8 @@ The attrition class has a lower total transaction count, total count change, tot
 ![categoric](https://user-images.githubusercontent.com/81990864/115446953-33fc0000-a218-11eb-82d8-48537cc1b303.jpg)
 
 Attrition class has a higher proportion of  customers who  were more inactive in the last 12 months . Also customers who hold more products from the same bank stay with the bank while the customers holding fewer products churn
-
-----
+ 
+ ----
 
 ## Build Predictive Models and Evaluations
 In this phase we performed few steps :
