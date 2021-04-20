@@ -13,9 +13,13 @@ The dataset contains 10127 rows and 21 columns and there seems to be no missing 
 
  <img src="https://user-images.githubusercontent.com/81990864/115435526-39eae480-a20a-11eb-9b70-81586c43b819.jpg" width="700" height="250">
 
-Maybe there wasn’t NA’s values but we detect many columns  filled with unknown information. In order not to lose this data we decided to  make replacement of this values with 'most frequent' method. By doing basic statistic we reveal some data oscillations and prior outliers detection in one of the features with some bouncing (unrealistic) values and outlier treatment by replacing  with median values(not using mean values as they are affected by outliers). Another step  in this phase  was dealing with skew data by doing some log transformations.Also Machine Learning algorithms can typically only have numerical values as their independent variables so our categorical variable are dealt with Cat Boost Encoder .
+Maybe there wasn’t NA’s values but we detect many columns  filled with unknown information. In order not to lose this data we decided to  make replacement of this values with 'most frequent' method. By doing basic statistic we reveal some data oscillations and prior outliers detection in one of the features with some bouncing (unrealistic) values and outlier treatment by replacing  with median values(not using mean values as they are affected by outliers). Another step  in this phase  was dealing with skew data by doing some log transformations.
+Also Machine Learning algorithms can typically only have numerical values as their independent variables so our categorical variable are dealt with Cat Boost Encoder .
 
 ----
 ## Exploratory Data Analysis (EDA)
 
 This analysis focuses on the behavior of bank customers who are more likely to leave the bank .We want to find out the most striking behaviors of customers through Exploratory Data Analysis and later on use some of the predictive analytics techniques to determine the customers who are most likely to churn.
+First of all, we are dealing with an imbalanced classification problem(Existing Customers 84% and Attrited Customers 16%) . Machine learning algorithms work well when the number of instances of each class is roughly equal so we utilized  SMOTE technique when creating the models to create balanced classification. 
+
+![class](https://user-images.githubusercontent.com/81990864/115439830-4c1b5180-a20f-11eb-9f7d-9ead22c3605d.jpg)
