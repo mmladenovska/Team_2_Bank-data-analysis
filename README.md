@@ -55,6 +55,9 @@ Total_Relationship_Count (Total no. of products held by the customer) also shows
 
 In this phase we performed few steps :
 * We generated training and test datasets by dividing dataset into training and test set with an 70%-30% ratio. As mentioned earlier, we also used SMOTE to handle issues with the imbalanced data. The new samples should be generated only in the training set to ensure our model generalizes well to unseen data.
+
+![smote](https://user-images.githubusercontent.com/81990864/115955296-f0461680-a4f5-11eb-9cb9-e3fec4d0f2b3.jpg)
+
 * We tested six different machine learning models to predict customer churn:
   - [X] DecisionTree
   - [X] RandomForest
