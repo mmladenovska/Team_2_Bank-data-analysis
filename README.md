@@ -33,21 +33,21 @@ For better understanding  the patterns, we tried to explore and visualize our da
 
 The distribution of customer age is similar between churned and not-churned customers. We can conclude that customer age does not seem to be an important factor in customer churn.More than 70% of the customers are in age range between 36-56 years old, so we are dealing with customers which may start thinking of their pensions, inheritance, taxes, etc., meaning they will emphasize on finding the best deal, regardless of the bank.
 
-We used boxplots to check the distribution of variables and separate them based on attribution flag
+We used boxplots to check the distribution of variables and separate them based on attribution flag.
+
 Based on the obtained, we saw significant differences in some of the variables, such as total transaction count and total transactions amount.The attrition class has a lower total transaction count and total transactions amount compared to the existing customers class, as expected. The bank can make further efforts to encourage customers to increase transactions amount and number of transactions.
 
 ![numericboxctam](https://user-images.githubusercontent.com/81990864/115952355-ba009b00-a4e5-11eb-9ca0-bcc8d7dddab4.jpg)
 
-Some significant differences between the classe could be noticed in the variables such as total Revolving Balance and Avg Utilization Ratio. In credit card terms, a revolving balance is the portion of credit card spending that goes unpaid at the end of a billing cycle.Credit utilization ratio is how much you owe on all your revolving accounts, such as credit cards, compared with your total available credit — expressed as a percentage. It's important because it's one of the biggest factors in your credit score.Experts suggest using no more than 30% of your limits, and less is better. Charging too much on your cards, especially if you max them out, is associated with being a higher credit risk. Its clear that this feature distribution is lower for Churned customer when compared to the Exisiting customers. Churning customers most of them have lower Revolving Balance and  Avg_Utilization_Ratio under 30%, so mabye over-indebted isn't the reason for leaving.
+Some significant differences between the classe could be noticed in the variables such as total Revolving Balance and Avg Utilization Ratio. In credit card terms, a revolving balance is the portion of credit card spending that goes unpaid at the end of a billing cycle.Credit utilization ratio is how much you owe on all your revolving accounts, such as credit cards, compared with your total available credit — expressed as a percentage. It's important because it's one of the biggest factors in your credit score.Experts suggest using no more than 30% of your limits, and less is better. Charging too much on your cards, especially if you max them out, is associated with being a higher credit risk. Its clear that this feature distribution is lower for Churned customer when compared to the Exisiting customers. Churning customers most of them have lower Revolving Balance and  Avg Utilization Ratio under 30%, so mabye over-indebted isn't the reason for leaving.
 
 ![numericboxblavg](https://user-images.githubusercontent.com/81990864/115952659-94749100-a4e7-11eb-921d-1f12fa67935b.jpg)
 
+Additional findings are that the bank has contacted the churning customers more frequently than the no churn cusotmers.
+Also attrition class has a higher proportion of customers which were more inactive in the last 12 months. There is a relation between the number of inactive months and customer churn. Тhe churn rate increases as the number of inactive months increases (excluding the categories with very few customers).
+Total_Relationship_Count (Total no. of products held by the customer) also shows that customers that holds more products from the same bank, usually stay with the bank while the customers that are holding fewer products, churn.
 
-
-
-![categoric](https://user-images.githubusercontent.com/81990864/115446953-33fc0000-a218-11eb-82d8-48537cc1b303.jpg)
-
-Attrition class has a higher proportion of customers which were more inactive in the last 12 months. Also customers that holds more products from the same bank, usually stay with the bank while the customers that are holding fewer products, churn.
+![catogW](https://user-images.githubusercontent.com/81990864/115953604-c3413600-a4ec-11eb-8686-93e1b6b82974.png)
 
 ----
 
@@ -55,21 +55,32 @@ Attrition class has a higher proportion of customers which were more inactive in
 
 In this phase we performed few steps :
 * We generated training and test datasets by dividing dataset into training and test set with an 70%-30% ratio. As mentioned earlier, we also used SMOTE to handle issues with the imbalanced data. The new samples should be generated only in the training set to ensure our model generalizes well to unseen data.
-* We tested six different machine learning models to predict customer churn, including, Decision Tree, Random Forest, GaussianNB, K-Nearest Neighbor, Support Vector Machine and XGBoost.
+* We tested six different machine learning models to predict customer churn:
+  - [X] DecisionTree
+  - [X] RandomForest
+  - [X] KNN
+  - [X] Gaussian
+  - [X] Support Vector Machine
+  - [X] XGBoost
+ 
 *  After predicting the probabilities, we calculated metric scores, plot confusion matrix for each classifer and plot the ROC Curve to choose the best classifer.
 
 | Classifier | Accuracy_score | Precision_score | Recall_score | F1_score | Mean_score |
 |------------|----------------|-----------------|--------------|----------|------------|
-| DecisionTreeClassifier| 0.958539	|0.827988|	0.919094	|0.871166	|0.894197|
-| SVM| 0.906713 |	0.677515	| 0.741100 |	0.707883 |	0.758303 |
-| RandomForestClassifier| 0.906713 |	0.677515	| 0.741100 |	0.707883 |	0.758303 |
-| KNeighborsClassifier| 0.906713 |	0.677515	| 0.741100 |	0.707883 |	0.758303 |
-| GaussianNB| 0.906713 |	0.677515	| 0.741100 |	0.707883 |	0.758303 |
-| XGBClassifier| 0.906713 |	0.677515	| 0.741100 |	0.707883 |	0.758303 |
+| DecisionTreeClassifier| 0.952287|	0.811623|	0.888158|	0.848168	|0.875059|
+| SVM| 0.904903 |	0.661509|	0.750000|	0.702980	|0.754848 |
+| RandomForestClassifier| 0.974992 |	0.909483 |	0.925439	| 0.917391	| 0.931826|
+| KNeighborsClassifier| 0.839092 |	0.478029 |	0.787281 |	0.594863 |	0.674816 |
+| GaussianNB| 0.881211 |	0.578773	 |0.765351 |	0.659112 |	0.721112 |
+| XGBClassifier| 0.978282	|0.923913	| 0.932018 |	0.927948	|0.940540 |
 
 ![roc](https://user-images.githubusercontent.com/81990864/115448357-ec767380-a219-11eb-95f5-ca3c39ff60a6.jpg)
 
-For the best performing classifer ( in this case XGB Classifier) we did Hyperparameter tunning by using Grid Search, RandomizedSearch and Manual Search. There was a slight improvement.
+For the best performing classifer ( in this case XGB Classifier) we did Hyperparameter tunning by using  RandomizedSearch and Manual Search. There was a slight improvement so we saved the best performing classifer for further prediction .
+
+| Classifier | Accuracy_score | Precision_score | Recall_score | F1_score | Mean_score |
+|------------|----------------|-----------------|--------------|----------|------------|
+| XGBClassifier_Manual_Tuning| 0.980586 |	0.932462 |	0.938596 |	0.935519	| 0.946791 |
 
 ----
 ## Conclusion
