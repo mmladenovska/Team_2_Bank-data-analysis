@@ -70,12 +70,12 @@ In this phase we performed few steps :
 
 | Classifier | Accuracy_score | Precision_score | Recall_score | F1_score | Mean_score |
 |------------|----------------|-----------------|--------------|----------|------------|
-| DecisionTreeClassifier| 0.952287|	0.811623|	0.888158|	0.848168	|0.875059|
-| SVM| 0.904903 |	0.661509|	0.750000|	0.702980	|0.754848 |
-| RandomForestClassifier| 0.974992 |	0.909483 |	0.925439	| 0.917391	| 0.931826|
-| KNeighborsClassifier| 0.839092 |	0.478029 |	0.787281 |	0.594863 |	0.674816 |
-| GaussianNB| 0.881211 |	0.578773	 |0.765351 |	0.659112 |	0.721112 |
-| XGBClassifier| 0.978282	|0.923913	| 0.932018 |	0.927948	|0.940540 |
+| DecisionTreeClassifier| 	0.951300|	0.809237|	0.883772|	0.844864	|0.872293|
+| SVM| 0.905890|		0.666667|	0.745614|	0.703934	|0.755526 |
+| RandomForestClassifier| 0.975979 |	0.915401|			0.925439| 0.920393	| 0.934303|
+| KNeighborsClassifier|0.839750|		0.479250 |	0.785088 |		0.595179 |	0.674817|
+| GaussianNB| 0.879895 |	0.575707	 |0.758772|	0.654683|	0.717264 |
+| XGBClassifier| 0.977295	|0.917927	| 0.932018 |	0.924918	|	0.938039 |
 
 ![roc](https://user-images.githubusercontent.com/81990864/115448357-ec767380-a219-11eb-95f5-ca3c39ff60a6.jpg)
 
