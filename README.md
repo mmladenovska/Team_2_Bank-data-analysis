@@ -50,6 +50,7 @@ Total_Relationship_Count (Total no. of products held by the customer) also shows
 ![catogW](https://user-images.githubusercontent.com/81990864/115953604-c3413600-a4ec-11eb-8686-93e1b6b82974.png)
 
 :large_blue_diamond: For more visualizations and data analysis read our file [EDA](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Bank_Data_Analysis_EDA.ipynb)
+
 ----
 
 ## Build Predictive Models and Evaluations
