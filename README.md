@@ -83,7 +83,7 @@ For the best performing classifer ( in this case XGB Classifier) we did Hyperpar
 
 | Classifier | Accuracy_score | Precision_score | Recall_score | F1_score | Mean_score |
 |------------|----------------|-----------------|--------------|----------|------------|
-| XGBClassifier_Manual_Tuning| 0.980586 |	0.932462 |	0.938596 |	0.935519	| 0.946791 |
+| XGBClassifier_Manual_Tuning| 0.980915 |	0.932609 |	0.940789 |	0.936681	| 0.947749 |
 
 ----
 ## Conclusion
