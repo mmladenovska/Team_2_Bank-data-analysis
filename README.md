@@ -49,7 +49,7 @@ Total_Relationship_Count (Total no. of products held by the customer) also shows
 
 ![catogW](https://user-images.githubusercontent.com/81990864/115953604-c3413600-a4ec-11eb-8686-93e1b6b82974.png)
 
-:large_blue_diamond: For more visualizations and data analysis read our file [EDA](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Bank_Data_Analysis_EDA.ipynb)
+:star: For more visualizations and data analysis,please read our file [EDA](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Bank_Data_Analysis_EDA.ipynb)
 
 ----
 
@@ -81,13 +81,19 @@ In this phase we performed few steps :
 
 ![roc](https://user-images.githubusercontent.com/81990864/115448357-ec767380-a219-11eb-95f5-ca3c39ff60a6.jpg)
 
-:large_blue_diamond: To  see all the models that we have tried please read our file [Models](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Notebook%20for%20training_Final.ipynb)
+:star: To  see all the models that we have tried, please read our file [Models](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Notebook%20for%20training_Final.ipynb).
+
+:trophy: Best Model - XGBoost Classifier
 
 For the best performing classifer ( in this case XGBoost Classifier) we did Hyperparameter tunning by using  RandomizedSearch and Manual Search. There was a slight improvement so we saved the best performing classifer for further prediction . In the table below we present the final classification report from the selected best model
 
 | Classifier | Accuracy_score | Precision_score | Recall_score | F1_score | Mean_score |
 |------------|----------------|-----------------|--------------|----------|------------|
 | XGBClassifier_Manual_Tuning| 0.980915 |	0.932609 |	0.940789 |	0.936681	| 0.947749 |
+
+![cfmax-Best](https://user-images.githubusercontent.com/81990864/116934088-c4006780-ac64-11eb-9c90-95941d998127.jpg)
+
+:star: To see how our best performing classifer works , you can also visit our file [Predictions](https://github.com/mmladenovska/Team_2_Bank-data-analysis/blob/main/Prediction%20Notebook_Final_UnseenData.ipynb).
 
 ----
 ## Conclusion
